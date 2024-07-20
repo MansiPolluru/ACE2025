@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Therapist Platform - Book Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:linear-gradient(15deg, pink, white);
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .container {
+            background-color: white;
+            box-shadow: 0 0 20px;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;     
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+        
+        input{
+            width: 100%;
+            padding: 15px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: pink;
+            border: none;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: pink;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form>
+            <div class="form">
+                <label for="patient-name">Patient Name</label>
+                <input type="text" id="patient-name" placeholder="Enter patient's name">
+            </div>
+            <div class="form">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" placeholder="Enter phone number">
+            </div>
+            <div class="form">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter age">
+            </div>
+            <div class="form">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter city">
+            </div>
+            <div class="form">
+                <label for="appointment-date">Appointment Date</label>
+                <input type="date" id="appointment-date" required>
+            </div>
+            <div class="form">
+                <label for="appointment-time">Appointment Time</label>
+                <input type="time" id="appointment-time" required>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <p><center>Need to reschedule? <a href="#">Contact Us</a></center></p>
+    </div>
+</body>
+</html>
