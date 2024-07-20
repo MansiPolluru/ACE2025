@@ -1,0 +1,79 @@
+7.Assessment
+//Assessment.java
+import java.util.Date;
+public class Assessment {
+    private int assessmentID; // Primary Key
+    private int sessionID; // Foreign Key
+    private int therapistID; // Foreign Key
+    private int patientID; // Foreign Key
+    private String assessmentType;
+    private String result;
+    private Date date;
+
+    // Constructor
+    public Assessment(int assessmentID, int sessionID, int therapistID, int patientID, String assessmentType, String result, Date date) {
+        this.assessmentID = assessmentID;
+        this.sessionID = sessionID;
+        this.therapistID = therapistID;
+        this.patientID = patientID;
+        this.assessmentType = assessmentType;
+        this.result = result;
+        this.date = date;
+    }
+    // Getter and Setter methods
+    public int getAssessmentID() {
+        return assessmentID;
+    }
+    public void setAssessmentID(int assessmentID) {
+        this.assessmentID = assessmentID;
+    }
+    public int getSessionID() {
+        return sessionID;
+    }
+    public void setSessionID(int sessionID) {
+        this.sessionID = sessionID;
+    }
+    public int getTherapistID() {
+        return therapistID;
+    }
+    public void setTherapistID(int therapistID) {
+        this.therapistID = therapistID;
+    }
+
+    public int getPatientID() {
+        return patientID;
+    }
+    public void setPatientID(int patientID) {
+        this.patientID = patientID;
+    }
+    public String getAssessmentType() {
+        return assessmentType;
+    }
+    public void setAssessmentType(String assessmentType) {
+        this.assessmentType = assessmentType;
+    }
+    public String getResult() {
+        return result;
+    }
+    public void setResult(String result) {
+        this.result = result;
+    }
+    public Date getDate() {
+        return date;
+    }
+    public void setDate(Date date) {
+        this.date = date;
+    }
+    @Override
+    public String toString() {
+        return "Assessment{" +
+                "assessmentID=" + assessmentID +
+                ", sessionID=" + sessionID +
+                ", therapistID=" + therapistID +
+                ", patientID=" + patientID +
+                ", assessmentType='" + assessmentType + '\'' +
+                ", result='" + result + '\'' +
+                ", date=" + date +
+                '}';
+    }
+}

@@ -1,0 +1,64 @@
+//Prescription
+public class Prescription {
+    private int prescriptionID; // Primary Key
+    private int therapistID; // Foreign Key
+    private int patientID; // Foreign Key
+    private String medication;
+    private String dosage;
+    private String frequency;
+  // Constructor
+    public Prescription(int prescriptionID, int therapistID, int patientID, String medication, String dosage, String frequency) {
+        this.prescriptionID = prescriptionID;
+        this.therapistID = therapistID;
+        this.patientID = patientID;
+        this.medication = medication;
+        this.dosage = dosage;
+        this.frequency = frequency;
+    }
+// Getter and Setter methods
+    public int getPrescriptionID() {
+        return prescriptionID;
+    }
+    public void setPrescriptionID(int prescriptionID) {
+        this.prescriptionID = prescriptionID;
+    }
+    public int getTherapistID() {
+        return therapistID;
+    }
+    public void setTherapistID(int therapistID) {
+        this.therapistID = therapistID;
+    }
+    public int getPatientID() {
+        return patientID;
+    }
+    public void setPatientID(int patientID) {
+        this.patientID = patientID;
+    }
+    public String getMedication() {
+        return medication;
+    }
+    public void setMedication(String medication) {
+        this.medication = medication;
+    }
+    public String getDosage() {
+        return dosage;
+    }
+    public void setDosage(String dosage) {
+        this.dosage = dosage;
+    }
+    public String getFrequency() {
+        return frequency; }
+    public void setFrequency(String frequency) {
+        this.frequency = frequency;
+    }
+    @Override
+    public String toString() {
+        return "Prescription{" +
+                "prescriptionID=" + prescriptionID +
+                ", therapistID=" + therapistID +
+                ", patientID=" + patientID +
+                ", medication='" + medication + '\'' +
+                ", dosage='" + dosage + '\'' +
+                ", frequency='" + frequency + '\'' +
+                '}';
+}
