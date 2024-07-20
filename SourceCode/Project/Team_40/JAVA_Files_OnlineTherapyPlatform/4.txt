@@ -1,0 +1,77 @@
+4.Appointment
+//Appointment.java
+import java.util.Date;
+public class Appointment {
+    private int appointmentID; // Primary Key
+    private int therapistID; // Foreign Key
+    private int patientID; // Foreign Key
+    private int sessionID; // Foreign Key
+    private Date date;
+    private String time;
+    private String status;
+// Constructor
+    public Appointment(int appointmentID, int therapistID, int patientID, int sessionID, Date date, String time, String status) {
+        this.appointmentID = appointmentID;
+        this.therapistID = therapistID;
+        this.patientID = patientID;
+        this.sessionID = sessionID;
+        this.date = date;
+        this.time = time;
+        this.status = status;
+    }
+    // Getter and Setter methods
+    public int getAppointmentID() {
+        return appointmentID;
+    }
+    public void setAppointmentID(int appointmentID) {
+        this.appointmentID = appointmentID;
+    }
+    public int getTherapistID() {
+        return therapistID;
+    }
+    public void setTherapistID(int therapistID) {
+        this.therapistID = therapistID;
+    }
+    public int getPatientID() {
+        return patientID;
+    }
+    public void setPatientID(int patientID) {
+        this.patientID = patientID;
+    }
+    public int getSessionID() {
+        return sessionID;
+    }
+    public void setSessionID(int sessionID) {
+        this.sessionID = sessionID;
+    }
+    public Date getDate() {
+        return date;
+    }
+    public void setDate(Date date) {
+        this.date = date;
+    }
+    public String getTime() {
+        return time;
+    }
+    public void setTime(String time) {
+        this.time = time;
+    }
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    @Override
+    public String toString() {
+        return "Appointment{" +
+                "appointmentID=" + appointmentID +
+                ", therapistID=" + therapistID +
+                ", patientID=" + patientID +
+                ", sessionID=" + sessionID +
+                ", date=" + date +
+                ", time='" + time + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
+}
