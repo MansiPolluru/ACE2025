@@ -1,0 +1,58 @@
+6.Payment
+//Payment.java
+public class Payment {
+    private int paymentID; // Primary Key
+    private int appointmentID; // Foreign Key
+    private double amount;
+    private String paymentMethod;
+    private String transactionID;
+ // Constructor
+    public Payment(int paymentID, int appointmentID, double amount, String paymentMethod, String transactionID) {
+        this.paymentID = paymentID;
+        this.appointmentID = appointmentID;
+        this.amount = amount;
+        this.paymentMethod = paymentMethod;
+        this.transactionID = transactionID;
+    }
+ // Getter and Setter methods
+    public int getPaymentID() {
+        return paymentID;
+    }
+    public void setPaymentID(int paymentID) {
+        this.paymentID = paymentID;
+    }
+    public int getAppointmentID() {
+        return appointmentID;
+    }
+    public void setAppointmentID(int appointmentID) {
+        this.appointmentID = appointmentID;
+    }
+    public double getAmount() {
+        return amount;
+    }
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+    public String getTransactionID() {
+        return transactionID;
+    }
+    public void setTransactionID(String transactionID) {
+        this.transactionID = transactionID; }
+
+    @Override
+    public String toString() {
+        return "Payment{" +
+                "paymentID=" + paymentID +
+                ", appointmentID=" + appointmentID +
+                ", amount=" + amount +
+                ", paymentMethod='" + paymentMethod + '\'' +
+                ", transactionID='" + transactionID + '\'' +
+                '}';
+    }
+}
