@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Servies</title>
+    <style>
+        body, h1, h2, p, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(15deg, pink, white);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(15deg, pink, white);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .therapy {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .therapy-card {
+            background-color: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px); 
+        }
+
+        .therapy-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .therapy-info {
+            padding: 15px;
+        }
+
+        .therapy-info h2 {
+            font-size: 1.2rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .therapy-info p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .therapy-info .artist {
+            font-style: italic;
+            color: #555;
+        }
+
+        .therapy-btn {
+            display: block;
+            margin: 20px auto;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .therapy-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Therapy Services</h1>
+        </header>
+        <main>
+            <div class="therapy">
+                <div class="therapy-card">
+                    <img src="images/anxiety.jpeg" alt="Artwork 1">
+                    <div class="therapy-info">
+                        <h2>ANXIETY THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Anxiety therapy focuses on managing and reducing symptoms of anxiety through various techniques and approaches. It aims to help individuals understand their anxiety triggers, develop coping strategies, and improve their overall quality of life.</p>
+                    </div>
+                </div>
+
+                <div class="therapy-card">
+                    <img src="images/depression.webp" alt="Artwork 2">
+                    <div class="therapy-info">
+                        <h2>DEPRESSION THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Depression therapy aims to alleviate symptoms of depression, improve mood, and enhance overall functioning. It often involves exploring underlying issues, changing negative thought patterns, and developing coping mechanisms..</p>
+                    </div>
+                </div>
+
+                
+                <div class="therapy-card">
+                    <img src="images/lackofcon.webp" alt="Artwork 3">
+                    <div class="therapy-info">
+                        <h2>LACK OF CONCENTRATION THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Therapy for lack of concentration focuses on improving attention and focus by addressing underlying issues, teaching practical strategies, and developing better organizational skills.</p>
+                    </div>
+                </div>
+
+                
+                <div class="therapy-card">
+                    <img src="images/motivation.jpg" alt="Artwork 4">
+                    <div class="therapy-info">
+                        <h2>MOTIVATION THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Motivation therapy helps individuals enhance their motivation to achieve personal goals and overcome obstacles. It involves identifying personal drivers and developing strategies to stay motivated.</p>
+                    </div>
+                </div>
+                <div class="therapy-card">
+                    <img src="images/relation.jpg" alt="Artwork 5">
+                    <div class="therapy-info">
+                        <h2>RELATIONSHIP THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Relationship therapy helps couples and individuals improve their relationships by addressing communication issues, resolving conflicts, and fostering deeper connections.</p>
+                    </div>
+                </div>
+                <div class="therapy-card">
+                    <img src="images/recenttrauma.jpeg" alt="Artwork 6">
+                    <div class="therapy-info">
+                        <h2>RECENT TRAUMA THERAPY</h2>
+                        <p class="artwork"></p>
+                        <p>Therapy for recent trauma helps individuals process and recover from traumatic experiences, aiming to reduce symptoms of distress and support emotional healing.</p>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Online Therapy Platform</p>
+        </footer>
+    </div>
+</body>
+</html>
